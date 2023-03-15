@@ -1,7 +1,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important ;
 }
- /*GALERIE*/
+/*GALERIE*/
 *,
 *::before,
 *::after {
@@ -16,8 +16,9 @@ body {
   --white: #ffffff;
   --bg: #f5f5f5;
 }
-/*
-html {
+
+/* html {
+  font-size: 62.5% !important;
   
   scroll-behavior: smooth;
 }
@@ -40,8 +41,9 @@ html {
   }
 }
 */
+
 ::-webkit-scrollbar {
-  width: 1.1rem;
+  width: 0.7rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -51,71 +53,58 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:#8a1538;
+  background: #8a1538;
 }
 
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
 }
 
-
-.containergallery{
-
-  size: 62.5% !important;
-
+.containergallery {
+  font-size: 50% !important;
   max-width: 124rem;
   padding: 4rem 1rem;
   margin: 0 auto;
 }
 
 .heading {
-
   padding: 1rem 0;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   text-align: center;
 }
 
 .swiper_container {
-
-  height: 52rem;
+  height: 37rem;
   padding: 2rem 0;
   position: relative !important;
-  
 }
 
 .swiper-slide {
-
-  width: 37rem !important;
-  height: 42rem !important;
+  width: 26rem !important;
+  height: 31rem !important;
   position: relative !important;
 }
 
 @media (max-width: 500px) {
   .swiper_container {
-
-    height: 47rem;
+    height: 42rem;
   }
   .swiper-slide {
-
     width: 28rem !important;
     height: 36rem !important;
   }
   .swiper-slide img {
-
     width: 28rem !important;
     height: 36rem !important;
-    
   }
 }
 
 .swiper-slide img {
-
-  width: 37rem;
-  height: 42rem;
-  border-radius: 2rem ;
+  width: 26rem;
+  height: 31rem;
+  border-radius: 2rem;
   object-fit: cover;
   border: 3px #6a112b !important;
- 
 }
 
 .swiper-slide-shadow-left,
@@ -175,21 +164,18 @@ html {
 }
 
 .slider-controler .slider-arrow ion-icon {
- /* font-size: 2rem;*/
+  /* font-size: 2rem;*/
   color: #222224;
 }
 
 .slider-controler .slider-arrow::after {
-  content: '';
+  content: "";
 }
 
 .swiper-pagination {
-  
   position: relative !important;
   width: 22rem !important;
   bottom: 1rem !important;
-  
-  
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -200,9 +186,6 @@ html {
   background: var(--primary);
   background-color: #6a112b;
 }
-
-
-
 
 /*FORMAT2*/
 
@@ -579,7 +562,11 @@ html {
   border-top: 15px #6a112b !important;
 
   /* background-color: #212529;*/
-  background-color: white;
+  /* background-color: white; */
+  background: repeating-radial-gradient(circle, #ffdae5, transparent 20%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  opacity: 0.9;
   max-width: 1600px !important;
   /*margin-top: 5%;*/
   align-items: center;
@@ -1017,3 +1004,19 @@ html {
   transition: color 0.3s ease 0s, background 0s ease 0.3s;
   font-weight: 500;
 }
+
+.FooterContact {
+  text-align: justify !important;
+}
+.contactDetails {
+  margin-bottom: 1rem;
+}
+
+.footerIcons {
+  color: #8a1538;
+  margin-right: 10px;
+}
+/*
+.me-auto {
+  margin-left: 17.2rem;
+}*/
