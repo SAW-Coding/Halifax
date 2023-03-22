@@ -1,7 +1,7 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important ;
 }
- /*GALERIE*/
+/*GALERIE*/
 *,
 *::before,
 *::after {
@@ -17,32 +17,10 @@ body {
   --bg: #f5f5f5;
 }
 
-html {
-  font-size: 62.5% !important;
-  
-  scroll-behavior: smooth;
-}
 
-@media (min-width: 1440px) {
-  html {
-    zoom: 1.5;
-  }
-}
-
-@media (min-width: 2560px) {
-  html {
-    zoom: 1.7;
-  }
-}
-
-@media (min-width: 3860px) {
-  html {
-    zoom: 2.5;
-  }
-}
 
 ::-webkit-scrollbar {
-  width: 1.1rem;
+  width: 0.7rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -52,71 +30,60 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:#8a1538;
+  background: #8a1538;
 }
 
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
 }
 
-
 .containergallery {
-
-  font-size: 62.5% !important;
-
+  font-size: 50% !important;
   max-width: 124rem;
   padding: 4rem 1rem;
   margin: 0 auto;
 }
 
 .heading {
-
   padding: 1rem 0;
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   text-align: center;
+  font-family: "Darby Sans Web";
+
 }
 
 .swiper_container {
-
-  height: 52rem;
+  height: 37rem;
   padding: 2rem 0;
   position: relative !important;
-  
 }
 
 .swiper-slide {
-
-  width: 37rem !important;
-  height: 42rem !important;
+  width: 26rem !important;
+  height: 31rem !important;
   position: relative !important;
 }
 
 @media (max-width: 500px) {
   .swiper_container {
-
-    height: 47rem;
+    height: 42rem;
   }
   .swiper-slide {
-
     width: 28rem !important;
     height: 36rem !important;
   }
   .swiper-slide img {
-
     width: 28rem !important;
     height: 36rem !important;
-    
   }
 }
 
 .swiper-slide img {
-
-  width: 37rem;
-  height: 42rem;
-  border-radius: 2rem ;
+  width: 26rem;
+  height: 31rem;
+  border-radius: 2rem;
   object-fit: cover;
   border: 3px #6a112b !important;
- 
 }
 
 .swiper-slide-shadow-left,
@@ -176,21 +143,18 @@ html {
 }
 
 .slider-controler .slider-arrow ion-icon {
- /* font-size: 2rem;*/
+  
   color: #222224;
 }
 
 .slider-controler .slider-arrow::after {
-  content: '';
+  content: "";
 }
 
 .swiper-pagination {
-  
   position: relative !important;
   width: 22rem !important;
   bottom: 1rem !important;
-  
-  
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -201,9 +165,6 @@ html {
   background: var(--primary);
   background-color: #6a112b;
 }
-
-
-
 
 /*FORMAT2*/
 
@@ -501,7 +462,7 @@ html {
   }
   .btnSeeAll {
     margin-top: 7%;
-    /* margin-left: 15%; */
+    
   }
 }
 .langueContainer {
@@ -578,11 +539,12 @@ html {
 /*FOOTER*/
 .footersection {
   border-top: 15px #6a112b !important;
-
-  /* background-color: #212529;*/
-  background-color: white;
+  background: repeating-radial-gradient(circle, #ffdae5, transparent 20%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  opacity: 0.9;
   max-width: 1600px !important;
-  /*margin-top: 5%;*/
+  
   align-items: center;
   color: #292929;
   align-items: center;
@@ -604,7 +566,7 @@ html {
   height: 70px;
   width: 200px;
   margin-bottom: 10px;
-  /*margin-left: 50px;*/
+
 }
 
 /*social media*/
@@ -766,11 +728,6 @@ html {
   animation: my-animation 30s linear infinite;
 }
 
-/* for Firefox 
-@-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
-}*/
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
@@ -863,6 +820,8 @@ html {
   border-radius: 30px;
   margin-right: 26px;
   cursor: pointer;
+  margin-left: 37px;
+  margin-right: -28px !important;
 }
 /* mobile */
 .hero-carousel-button2 {
@@ -875,7 +834,7 @@ html {
   font-weight: 500;
   border-radius: 30px;
   margin-left: 15px;
-  /* margin-top: 290px; */
+ 
 
   cursor: pointer;
 }
@@ -911,13 +870,13 @@ html {
 }
 
 .carouselCaption {
-  /* background-color: #b4b0b1; */
+
   width: 45%;
   margin-left: -6%;
   height: 80% !important;
 }
 .carouselCaption2 {
-  /* background-color: #b4b0b1; */
+
   width: 35%;
   margin-left: -10%;
   height: 85% !important;
@@ -964,12 +923,8 @@ html {
 }
 
 .carouselCaptionMobile2 button {
-  /* margin-top: 48px !important; */
+ 
   margin-top: -150px !important;
-}
-
-.carouselCaptionMobile button {
-  /* margin-top: 85px !important; */
 }
 
 /* button slide hover efffect */
@@ -1017,4 +972,16 @@ html {
   background: rgb(255, 255, 255);
   transition: color 0.3s ease 0s, background 0s ease 0.3s;
   font-weight: 500;
+}
+
+.FooterContact {
+  text-align: justify !important;
+}
+.contactDetails {
+  margin-bottom: 1rem;
+}
+
+.footerIcons {
+  color: #8a1538;
+  margin-right: 10px;
 }

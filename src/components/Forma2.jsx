@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import SingleFormation from "./SingleFormation";
+
 const Forma2 = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("");
 

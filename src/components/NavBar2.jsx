@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import NavDropdown from "react-bootstrap/NavDropdown";
 import { useEffect } from "react";
 
 function BasicExample() {
@@ -33,46 +33,52 @@ function BasicExample() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link href="/" className="navMenu">
               Accueil
             </Nav.Link>
 
-            
-            <NavDropdown title="Langues" id="basic-nav-dropdown" className="navMenu">
-              <NavDropdown.Item href="anglais">Anglais</NavDropdown.Item>
+            <NavDropdown
+              title="Langues"
+              id="basic-nav-dropdown"
+              className="navMenu"
+            >
+              <NavDropdown.Item href="/anglais">Anglais</NavDropdown.Item>
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="francais">Français</NavDropdown.Item>
+              <NavDropdown.Item href="/francais">Français</NavDropdown.Item>
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="Allemand">Allemand</NavDropdown.Item>
+              <NavDropdown.Item href="/Allemand">Allemand</NavDropdown.Item>
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="details/italien">Italien</NavDropdown.Item>
+              <NavDropdown.Item href="/details/italien">
+                Italien
+              </NavDropdown.Item>
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="certif">Préparation aux tests de langues</NavDropdown.Item>
+              <NavDropdown.Item href="/certif">
+                Préparation aux tests de langues
+              </NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown title="Formations" id="basic-nav-dropdown" className="navMenu">
-              <NavDropdown.Item href="management" className="navMenu" >Management</NavDropdown.Item>
+            <NavDropdown
+              title="Formations"
+              id="basic-nav-dropdown"
+              className="navMenu"
+            >
+              <NavDropdown.Item href="/management">Management</NavDropdown.Item>
               <NavDropdown.Divider />
 
-              <NavDropdown.Item href="informatique">Informatique</NavDropdown.Item>
-              
+              <NavDropdown.Item href="/informatique">
+                Informatique
+              </NavDropdown.Item>
             </NavDropdown>
-
 
             <Nav.Link href="/contact" className="navMenu">
               Contact
             </Nav.Link>
-
-
-
-
           </Nav>
-
         </Navbar.Collapse>
       </Container>
     </Navbar>
