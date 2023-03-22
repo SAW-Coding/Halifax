@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import NavBar2 from "./NavBar2";
 import { Link } from "react-router-dom";
 const Anglais = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState("");
+  const [ setSelectedLanguage] = useState("");
 
   const handleClick = (language) => {
     setSelectedLanguage(language);
@@ -114,7 +114,6 @@ const Anglais = () => {
             </div>
           </div>
         </div>
-
       </div>
       <Contact2 />
       <Footer />

@@ -63,7 +63,7 @@ const Langue2 = () => {
         </div>
       </Carousel>
       <br />
-      <Link to="/AllFormation">
+      <Link to="/AllLangue">
         <button className="btnSeeAll">Toutes les langues &#187;</button>
       </Link>
     </div>
